@@ -1,0 +1,41 @@
+/* No CSS *//*# sourceMappingURL=style.css.map */
+
+#gridPrincipal {
+    justify-content: stretch;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 0px;
+    grid-template-areas: "encabezado encabezado encabezado"
+                         "nav nav nav"
+                         "section section aside"
+                         "footer footer footer";
+}
+
+.encabezado {
+    grid-area: encabezado;
+    height: 600px;
+    background-image: url(flores.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.titulo {
+    background-color: rgb(113, 3, 3);
+    color: white;
+}
+
+.textoBoton {
+    color: white;
+    font-size: 20px;
+}
+
+#posBoton {
+    margin-top: 450px;
+}
+
+#barraNav {
+    position: sticky;
+}
