@@ -1,6 +1,6 @@
 /* No CSS *//*# sourceMappingURL=style.css.map */
 
-#gridPrincipal {
+/*#gridPrincipal {
     justify-content: stretch;
     display: grid;
     grid-template-columns: 20% auto 20%;
@@ -11,13 +11,54 @@
                          "nav nav nav"
                          "section section aside"
                          "footer footer footer";
+}*/
+
+#gridPrincipal {
+    justify-content: stretch;
+    display: grid;
+    grid-template-columns: 20% auto 25%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 0px;
+    grid-template-areas: 
+                         "seccion seccion aside"
+                         "footer footer footer";
+}
+
+.seccion {
+    grid-area: seccion;
+    height: auto;
+    display: flex;
+    align-content: space-between;
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
+}
+.logo {
+    font-family: 'Smooch', cursive;
+    font-size: 100px;
+    color: white;
+    margin-top: 10%;
+}
+.contenido {
+    height: 400px;
+    width: 50%;
+}
+.imagenes {
+    height: 400px;
+    width: 50%;
 }
 
 .encabezado {
     grid-area: encabezado;
     height: 600px;
-    background-image: url(flores.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(flores.jpg);
     background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
     background-position: center;
     text-align: center;
 }
@@ -33,9 +74,38 @@
 }
 
 #posBoton {
-    margin-top: 450px;
+    margin-top: 50px;
 }
 
-#barraNav {
-    position: sticky;
+.formulario {
+    background-image: url(madera.jpg);
+    background-size: cover;
+    text-align: justify;
+    height: 500px;
+    width: auto;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.fondoForm {
+    /*background-color: rgb(255, 219, 225);*/
+    background-color: rgb(113, 3, 3);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    height: 420px;
+    width: 260px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    
+}
+
+footer {
+    background-color: rgb(113, 3, 3);
+    color: white;
+    text-align: center;
 }
