@@ -17,8 +17,8 @@
     justify-content: stretch;
     display: grid;
     grid-template-columns: 20% auto 25%;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 30px;
+    grid-template-rows: 1fr auto;
+    column-gap: 10px;
     row-gap: 0px;
     grid-template-areas: 
                          "seccion seccion aside"
@@ -29,27 +29,59 @@
     grid-area: seccion;
     height: auto;
     display: flex;
-    align-content: space-between;
+    flex-direction: column;
 }
 aside {
     grid-area: aside;
+    /*background-color: rgb(211, 211, 211);*/
+    background-color: rgb(242, 242, 242);
+    text-align: center;
 }
 footer {
     grid-area: footer;
 }
 .logo {
-    font-family: 'Smooch', cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: 100px;
     color: white;
     margin-top: 10%;
 }
 .contenido {
-    height: 400px;
-    width: 50%;
+    height: auto;
+    width: auto;
+    background-color: rgb(242, 242, 242);
+}
+.tituloContenido {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.textoIndex {
+    text-align: justify;
+}
+.parrafoIndex {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+    color: rgb(69, 69, 69);
+
 }
 .imagenes {
-    height: 400px;
-    width: 50%;
+    height: 100%;
+    width: auto;
+    background-color: rgb(242, 242, 242);
+    padding-bottom: 20px;
+    
+}
+
+.galeriaCarrusel {
+    /*background-color: grey;*/
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    
 }
 
 .encabezado {
@@ -66,6 +98,8 @@ footer {
 .titulo {
     background-color: rgb(113, 3, 3);
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 .textoBoton {
@@ -77,14 +111,22 @@ footer {
     margin-top: 50px;
 }
 
+.tituloAside {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    color: rgb(69, 69, 69);
+}
+
 .formulario {
     background-image: url(madera.jpg);
     background-size: cover;
     text-align: justify;
     height: 500px;
-    width: auto;
+    width: 320px;
     border-radius: 15px;
-    margin-top: 30px;
+    margin-top: 20%;
+    margin-left: 10px;
+    position: sticky;
 }
 .fondoForm {
     /*background-color: rgb(255, 219, 225);*/
@@ -98,7 +140,7 @@ footer {
     width: 260px;
     position: absolute;
     margin-top: 40px;
-    margin-left: 40px;
+    margin-left: 30px;
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
     
