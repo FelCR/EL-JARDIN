@@ -195,3 +195,54 @@ footer {
     flex-direction: row;
    
 }
+
+/*-----------RESPONSIVE-----------*/
+
+@media (max-width: 992px) {
+    
+    #gridPrincipal {
+        justify-content: stretch;
+        display: grid;
+        grid-template-columns: 20% auto 25%;
+        grid-template-rows: 1fr 1fr auto;
+        column-gap: 10px;
+        row-gap: 0px;
+        grid-template-areas: 
+                             "seccion seccion seccion"
+                             "aside aside aside"
+                             "footer footer footer";
+    }
+    aside {
+        text-align: center;
+    }
+    .formulario {
+        background-image: url(madera.jpg);
+        background-size: cover;
+        text-align: justify;
+        height: 500px;
+        width: 320px;
+        border-radius: 15px;
+        margin-top: 5%;
+        margin-left: 30%;
+        position: sticky;
+    }
+    .fondoForm {
+        /*background-color: rgb(255, 219, 225);*/
+        background-color: rgb(223, 223, 223);
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 15px;
+        height: 420px;
+        width: 260px;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(69, 69, 69);
+    }
+    .imagenContacto {
+        display: none;
+    }
+}    
