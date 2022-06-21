@@ -1,0 +1,279 @@
+@import "colores";
+@import "fuentes";
+
+.encabezado {
+    grid-area: encabezado;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(flores.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+#gridPrincipal {
+    justify-content: stretch;
+    display: grid;
+    grid-template-columns: 20% auto 25%;
+    grid-template-rows: 1fr auto;
+    column-gap: 10px;
+    row-gap: 0px;
+    grid-template-areas: 
+                         "seccion seccion aside"
+                         "footer footer footer";
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+
+    footer {
+        background-color: $colorVino;
+        color: white;
+        text-align: center;
+    }
+}
+
+.logo {
+    font-family: $fuenteLogo;
+    font-size: 100px;
+    color: white;
+    margin-top: 10%;
+}
+
+.textoBoton {
+    color: white;
+    font-size: 20px;
+}
+
+#posBoton {
+    margin-top: 50px;
+}
+
+/*-----------CUERPO DE LA PAGINA-----------*/
+.seccion {
+    grid-area: seccion;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $colorContenido;
+
+    aside {
+        grid-area: aside;
+        text-align: center;
+        background-color: $colorContenido;
+}
+
+
+    .contenido {
+        height: auto;
+        width: auto;
+
+        .textoIndex {
+            text-align: justify;
+        }
+    }
+}
+
+/*.contenido {
+    height: auto;
+    width: auto;
+    background-color: rgb(242, 242, 242);
+}*/
+.tituloContenido {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+/*.textoIndex {
+    text-align: justify;
+}*/
+.parrafoIndex {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+    color: rgb(69, 69, 69);
+
+}
+.imagenes {
+    height: 100%;
+    width: auto;
+    background-color: rgb(242, 242, 242);
+    padding-bottom: 20px;
+    
+}
+
+.galeriaCarrusel {
+    /*background-color: grey;*/
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    
+}
+
+.tituloAside {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    color: rgb(69, 69, 69);
+}
+
+.formulario {
+    background-image: url(madera.jpg);
+    background-size: cover;
+    text-align: justify;
+    height: 500px;
+    width: 320px;
+    border-radius: 15px;
+    margin-top: 20%;
+    margin-left: 10px;
+    position: sticky;
+}
+.fondoForm {
+    /*background-color: rgb(255, 219, 225);*/
+    background-color: $colorFormularioContacto  ;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    height: 420px;
+    width: 260px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(69, 69, 69);
+    
+}
+
+/*---------FOOTER----------*/
+
+/*footer {
+    background-color: rgb(113, 3, 3);
+    color: white;
+    text-align: center;
+    grid-area: footer;
+}*/
+
+/*----------// FORMATO SECCIONES //----------*/
+.encabezadoContacto {
+    grid-area: encabezado;
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(portadaContacto.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+}
+.titulo {
+    background-color: rgb(113, 3, 3);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.logoSecciones {
+    font-family: $fuenteLogo;
+    font-size: 60px;
+    color: white;
+    margin-top: 2%;
+}
+/*---------CUERPO DE CONTACTO---------*/
+.seccionContacto {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+.contacto {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 60%;
+    background-image: url(madera.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+.formularioContacto {
+    background-size: cover;
+    text-align: justify;
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    margin-top: 7%;
+    background-color: rgb(223, 223, 223);
+}
+.formatoFormulario {
+    background-color: rgb(223, 223, 223);
+    width: auto;
+    padding-top: 15px; padding-left: 15px; padding-bottom: 15px; padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-style: dotted;
+   
+}
+
+.imagenContacto {
+    height: 350px;
+    width: 55%;
+    background-color: white;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+    background-position: center;
+
+}
+
+
+/*-----------RESPONSIVE-----------*/
+
+@media (max-width: 992px) {
+    
+    #gridPrincipal {
+        justify-content: stretch;
+        display: grid;
+        grid-template-columns: 20% auto 25%;
+        grid-template-rows: 1fr 1fr auto;
+        column-gap: 10px;
+        row-gap: 0px;
+        grid-template-areas: 
+                             "seccion seccion seccion"
+                             "aside aside aside"
+                             "footer footer footer";
+    }
+    aside {
+        text-align: center;
+        background-color: $colorContenido;
+    }
+    .formulario {
+        background-image: url(madera.jpg);
+        background-size: cover;
+        text-align: justify;
+        height: 500px;
+        width: 320px;
+        border-radius: 15px;
+        margin-top: 5%;
+        margin-left: 30%;
+        position: sticky;
+    }
+    .fondoForm {
+        /*background-color: rgb(255, 219, 225);*/
+        background-color: rgb(223, 223, 223);
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 15px;
+        height: 420px;
+        width: 260px;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(69, 69, 69);
+    }
+    .imagenContacto {
+        display: none;
+    }
+}    
