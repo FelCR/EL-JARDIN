@@ -88,11 +88,13 @@ aside {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: aside;
-  text-align: center;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   background-image: url(madera2.jpg);
   background-size: cover;
+}
+
+.contactoAside {
+  color: white;
 }
 
 /*.contenido {
@@ -125,7 +127,6 @@ aside {
 .imagenes {
   height: 100%;
   width: auto;
-  background-color: #f2f2f2;
   padding-bottom: 20px;
 }
 
@@ -135,6 +136,29 @@ aside {
   width: 90%;
   margin-left: 5%;
   margin-top: 2%;
+}
+
+.creamosRecuerdos {
+  height: 400px;
+  width: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.278))), url(formulario.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(formulario.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  /*background-attachment: fixed;*/
+  background-position: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.recuerdos {
+  font-family: "Great Vibes", cursive;
+  font-size: 100px;
+  color: white;
+  margin-top: 20px;
 }
 
 .tituloTarjetas {
@@ -152,39 +176,31 @@ aside {
   padding-bottom: 15px;
 }
 
-/*.tituloAside {
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 20px;
-    color: rgb(69, 69, 69);
+.tituloAside {
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 20px;
+  color: #454545;
 }
 
-.formulario {
-    background-image: url(madera.jpg);
-    background-size: cover;
-    text-align: justify;
-    height: 500px;
-    width: 320px;
-    border-radius: 15px;
-    margin-top: 20%;
-    margin-left: 10px;
-    position: sticky;
-}
 .fondoForm {
-    background-color: $colorFormularioContacto  ;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 15px;
-    height: 420px;
-    width: 260px;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(69, 69, 69);
-    
-}*/
+  background-color: #dfdfdf;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  height: 420px;
+  width: 260px;
+  margin-left: 12%;
+  margin-top: 20%;
+  font-family: 'Times New Roman', Times, serif;
+  color: #454545;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  left: 20px;
+}
+
 /*---------FOOTER----------*/
 footer {
   background-color: #710303;
@@ -314,7 +330,6 @@ footer {
   }
   aside {
     text-align: center;
-    background-color: #f2f2f2;
   }
   .formulario {
     background-image: url(madera.jpg);

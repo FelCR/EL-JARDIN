@@ -63,7 +63,6 @@ header {
     flex-direction: column;
     background-color: $colorContenido;
 
-
     .contenido {
         height: auto;
         width: auto;
@@ -72,10 +71,13 @@ header {
 
 aside {
     grid-area: aside;
-    text-align: center;
-    position: sticky;
+    position: relative;
     background-image: url(madera2.jpg);
     background-size: cover;
+}
+
+.contactoAside {
+    color: white;
 }
 
 /*.contenido {
@@ -108,7 +110,6 @@ aside {
 .imagenes {
     height: 100%;
     width: auto;
-    background-color: rgb(242, 242, 242);
     padding-bottom: 20px;
     
 }
@@ -120,6 +121,28 @@ aside {
     margin-left: 5%;
     margin-top: 2%;
     
+}
+
+.creamosRecuerdos {
+    height: 400px;
+    width: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(formulario.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    /*background-attachment: fixed;*/
+    background-position: center;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.recuerdos {
+    font-family: $fuenteLogo;
+    font-size: 100px;
+    color: white;
+    margin-top: 20px;
 }
 
 .tituloTarjetas {
@@ -134,23 +157,13 @@ aside {
 }
 
 
-/*.tituloAside {
+.tituloAside {
     font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
     color: rgb(69, 69, 69);
 }
 
-.formulario {
-    background-image: url(madera.jpg);
-    background-size: cover;
-    text-align: justify;
-    height: 500px;
-    width: 320px;
-    border-radius: 15px;
-    margin-top: 20%;
-    margin-left: 10px;
-    position: sticky;
-}
+
 .fondoForm {
     background-color: $colorFormularioContacto  ;
     padding-bottom: 20px;
@@ -160,13 +173,15 @@ aside {
     border-radius: 15px;
     height: 420px;
     width: 260px;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 30px;
+    margin-left: 12%;
+    margin-top: 20%;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(69, 69, 69);
+    position: sticky;
+    top: 50px;
+    left: 20px;
     
-}*/
+}
 
 /*---------FOOTER----------*/
 
@@ -270,7 +285,7 @@ margin-top: 15%;
     }
     aside {
         text-align: center;
-        background-color: $colorContenido;
+        
     }
     .formulario {
         background-image: url(madera.jpg);
