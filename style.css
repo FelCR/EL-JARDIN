@@ -26,6 +26,11 @@
       grid-template-areas: "seccion seccion aside" "footer footer footer";
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .titulo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,17 +79,20 @@
   background-color: #f2f2f2;
 }
 
-.seccion aside {
+.seccion .contenido {
+  height: auto;
+  width: auto;
+}
+
+aside {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: aside;
   text-align: center;
-  background-color: #f2f2f2;
-}
-
-.seccion .contenido {
-  height: auto;
-  width: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  background-image: url(madera2.jpg);
+  background-size: cover;
 }
 
 /*.contenido {
@@ -144,14 +152,6 @@
   padding-bottom: 15px;
 }
 
-.contactoAside {
-  height: 50px;
-  width: 50px;
-  border-style: dotted;
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 /*.tituloAside {
     font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
@@ -186,12 +186,16 @@
     
 }*/
 /*---------FOOTER----------*/
-/*footer {
-    background-color: rgb(113, 3, 3);
-    color: white;
-    text-align: center;
-    grid-area: footer;
-}*/
+footer {
+  background-color: #710303;
+  color: white;
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+
 /*----------// FORMATO SECCIONES //----------*/
 .encabezadoContacto {
   grid-area: encabezado;
@@ -342,6 +346,31 @@
   }
   .imagenContacto {
     display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .fondoForm {
+    background-color: #dfdfdf;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    height: 420px;
+    width: 260px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #454545;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imagenContacto {
+    height: auto;
+    width: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

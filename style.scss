@@ -16,12 +16,16 @@
     justify-content: stretch;
     display: grid;
     grid-template-columns: 20% auto 25%;
-    grid-template-rows: 1fr auto;
+    grid-template-rows:  1fr auto;
     column-gap: 10px;
     row-gap: 0px;
     grid-template-areas: 
                          "seccion seccion aside"
                          "footer footer footer";
+}
+
+header {
+    position: sticky;
 }
 
 .titulo {
@@ -59,17 +63,19 @@
     flex-direction: column;
     background-color: $colorContenido;
 
-    aside {
-        grid-area: aside;
-        text-align: center;
-        background-color: $colorContenido;
-}
-
 
     .contenido {
         height: auto;
         width: auto;
     }
+}
+
+aside {
+    grid-area: aside;
+    text-align: center;
+    position: sticky;
+    background-image: url(madera2.jpg);
+    background-size: cover;
 }
 
 /*.contenido {
@@ -127,15 +133,6 @@
     padding-bottom: 15px;
 }
 
-aside {
-    position: sticky;
-}
-
-.contactoAside {
-    height: 50px;
-    width: 50px;
-    border-style: dotted;
-}
 
 /*.tituloAside {
     font-family: 'Times New Roman', Times, serif;
@@ -173,12 +170,12 @@ aside {
 
 /*---------FOOTER----------*/
 
-/*footer {
+footer {
     background-color: rgb(113, 3, 3);
     color: white;
     text-align: center;
     grid-area: footer;
-}*/
+}
 
 /*----------// FORMATO SECCIONES //----------*/
 .encabezadoContacto {
@@ -305,4 +302,28 @@ margin-top: 15%;
     .imagenContacto {
         display: none;
     }
-}    
+}
+
+@media (max-width: 1200px) {
+.fondoForm{
+    background-color: rgb(223, 223, 223);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    height: 420px;
+    width: 260px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(69, 69, 69);
+    align-items: center;
+}
+
+.imagenContacto {
+    height: auto;
+    width: auto;
+}
+}
