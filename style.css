@@ -87,10 +87,6 @@
   width: auto;
 }
 
-.seccion .contenido .textoIndex {
-  text-align: justify;
-}
-
 /*.contenido {
     height: auto;
     width: auto;
@@ -108,8 +104,14 @@
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 10px;
   color: #454545;
+}
+
+.parrafoIndex .textoIndex {
+  text-align: justify;
 }
 
 .imagenes {
@@ -127,42 +129,62 @@
   margin-top: 2%;
 }
 
-.tituloAside {
-  font-family: 'Times New Roman', Times, serif;
-  margin-top: 20px;
+.tituloTarjetas {
+  text-align: center;
   color: #454545;
 }
 
-.formulario {
-  background-image: url(madera.jpg);
-  background-size: cover;
-  text-align: justify;
-  height: 500px;
-  width: 320px;
-  border-radius: 15px;
-  margin-top: 20%;
-  margin-left: 10px;
+.tarjetasServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 15px;
+}
+
+.contactoAside {
+  height: 50px;
+  width: 50px;
+  border-style: dotted;
   position: -webkit-sticky;
   position: sticky;
 }
 
-.fondoForm {
-  /*background-color: rgb(255, 219, 225);*/
-  background-color: #dfdfdf;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 15px;
-  height: 420px;
-  width: 260px;
-  position: absolute;
-  margin-top: 40px;
-  margin-left: 30px;
-  font-family: 'Times New Roman', Times, serif;
-  color: #454545;
+/*.tituloAside {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    color: rgb(69, 69, 69);
 }
 
+.formulario {
+    background-image: url(madera.jpg);
+    background-size: cover;
+    text-align: justify;
+    height: 500px;
+    width: 320px;
+    border-radius: 15px;
+    margin-top: 20%;
+    margin-left: 10px;
+    position: sticky;
+}
+.fondoForm {
+    background-color: $colorFormularioContacto  ;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    height: 420px;
+    width: 260px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(69, 69, 69);
+    
+}*/
 /*---------FOOTER----------*/
 /*footer {
     background-color: rgb(113, 3, 3);
@@ -235,11 +257,10 @@
   width: auto;
   border-radius: 15px;
   margin-top: 7%;
-  background-color: #dfdfdf;
 }
 
 .formatoFormulario {
-  background-color: #dfdfdf;
+  background-color: #f2f2f2;
   width: auto;
   padding-top: 15px;
   padding-left: 15px;
@@ -251,17 +272,23 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-style: dotted;
 }
 
 .imagenContacto {
   height: 350px;
   width: 55%;
-  background-color: white;
   border-radius: 15px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(wedding1.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
   background-position: center;
+  text-align: center;
+}
+
+.contactanos {
+  font-family: "Great Vibes", cursive;
+  font-size: 100px;
+  color: white;
+  margin-top: 15%;
 }
 
 /*-----------RESPONSIVE-----------*/
