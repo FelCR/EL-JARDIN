@@ -29,6 +29,7 @@
 header {
   position: -webkit-sticky;
   position: sticky;
+  width: 100%;
 }
 
 .titulo {
@@ -46,7 +47,7 @@ header {
   text-align: center;
 }
 
-.logo {
+.logo, .logoSecciones {
   font-family: "Great Vibes", cursive;
   font-size: 100px;
   color: white;
@@ -110,7 +111,7 @@ aside {
 /*.textoIndex {
     text-align: justify;
 }*/
-.parrafoIndex {
+.parrafo1 {
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 5px;
@@ -118,9 +119,17 @@ aside {
   padding-right: 40px;
   padding-bottom: 10px;
   color: #454545;
+  text-align: justify;
 }
 
-.parrafoIndex .textoIndex {
+.parrafo2 {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  color: #454545;
   text-align: justify;
 }
 
@@ -236,10 +245,10 @@ footer {
 }
 
 .logoSecciones {
-  font-family: "Great Vibes", cursive;
-  font-size: 60px;
-  color: white;
-  margin-top: 2%;
+  /*font-family: $fuenteLogo;
+    font-size: 60px;
+    color: white;
+    margin-top: 2%;*/
 }
 
 /*---------CUERPO DE CONTACTO---------*/
